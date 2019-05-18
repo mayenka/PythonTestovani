@@ -4,6 +4,8 @@ def is_valid_play(play):
     return play in ['rock', 'paper', 'scissors']    #to stejné jako podmínka s if
 
 
+def random(play):
+    return random.choice(['rock', 'paper', 'scissors'])
 
 
 
@@ -17,7 +19,8 @@ if __name__ == '__main__':      #proměnná == řetezec
     # while human not in ['rock', 'paper', 'scissors']:
         human = input('rock, paper or scissors? ')
 
-    computer = random.choice(['rock', 'paper', 'scissors'])
+    # computer = random.choice(['rock', 'paper', 'scissors'])
+    computer = random_play()
 
     print(computer)
 
