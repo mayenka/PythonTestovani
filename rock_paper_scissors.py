@@ -4,7 +4,7 @@ def is_valid_play(play):
     return play in ['rock', 'paper', 'scissors']    #to stejné jako podmínka s if
 
 
-def random(play):
+def random_play():
     return random.choice(['rock', 'paper', 'scissors'])
 
 
