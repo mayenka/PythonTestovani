@@ -26,7 +26,7 @@ def determine_game_result(human, computer):
         return 'computer'
 
 
-def main():
+def main(load=input):
     # human = input('rock, paper or scissors? ')
     human = None    #None není validní, takže vím, že pak proběhne následný cyklus
     while not is_valid_play(human):
