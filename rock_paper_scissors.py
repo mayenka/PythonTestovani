@@ -31,7 +31,7 @@ def main(load=input):
     human = None    #None není validní, takže vím, že pak proběhne následný cyklus
     while not is_valid_play(human):
     # while human not in ['rock', 'paper', 'scissors']:
-        human = input('rock, paper or scissors? ')
+        human = load('rock, paper or scissors? ')
 
     # computer = random.choice(['rock', 'paper', 'scissors'])
     computer = random_play()
